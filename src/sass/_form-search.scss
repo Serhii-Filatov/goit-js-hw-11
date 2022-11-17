@@ -1,0 +1,67 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 56px;
+    width: 100%;
+    z-index: 100;
+    background-image: linear-gradient(var(--brand-blue-color) 50%, var(--brand-yellow-color) 50%);
+}
+
+main {
+    padding-top: 60px;
+}
+
+.icon-picabay{
+    position: absolute;
+    width: 20%;
+    margin-top: 15px;
+
+    @media screen and (min-width: 480px) {
+        width: 15%;
+    }
+}
+
+.title {
+    position: absolute;
+    top: 15;
+    right: 5;
+    text-align: right;
+    animation: shake 2s linear alternate infinite;
+
+    @media screen and (min-width: 768px) {
+        right: 100;
+    }
+}
+
+@keyframes shake {
+    from {
+        color: var(--brand-blue-color);
+    }
+
+    to {
+        transform: translateX(-30px);
+        color: var(--brand-yellow-color);
+    }
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.icon-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form button {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover{
+    background-color: var(--third-color);
+}
