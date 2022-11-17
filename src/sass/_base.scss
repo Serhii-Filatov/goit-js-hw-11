@@ -1,8 +1,8 @@
 :root {
     --main-color: #212121;
-    --brand-blue-color: rgba(0, 74, 255, 1);
-    --brand-yellow-color: rgba(250, 250, 17);
-    --third-color: rgb(240, 248, 255);
+    --brand-color: rgb(60, 50, 150);
+    --brand-active-color: rgb(40, 30, 130);
+    --second-color: #f0f8ff;
     --bgd-scl: rgb(225, 231, 231);
     --dst-between: 20px;
 
@@ -32,5 +32,5 @@ body {
 }
 
 .footer {
-    height: 50px;
+    height: 30px;
 }

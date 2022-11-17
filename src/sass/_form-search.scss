@@ -5,7 +5,7 @@ header {
     height: 56px;
     width: 100%;
     z-index: 100;
-    background-image: linear-gradient(var(--brand-blue-color) 50%, var(--brand-yellow-color) 50%);
+    background-color: var(--brand-color);
 }
 
 main {
@@ -22,46 +22,55 @@ main {
     }
 }
 
-.title {
-    position: absolute;
-    top: 15;
-    right: 5;
-    text-align: right;
-    animation: shake 2s linear alternate infinite;
-
-    @media screen and (min-width: 768px) {
-        right: 100;
-    }
-}
-
 @keyframes shake {
     from {
-        color: var(--brand-blue-color);
+        color: var(--brand-color);
     }
 
     to {
         transform: translateX(-30px);
-        color: var(--brand-yellow-color);
+        color: var(--brand-active-color);
     }
 }
 
 .search-form {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 10px 10px 0;
 }
+
+.searchTerm {
+    
+    border: 3px solid var(--brand-active-color);
+    border-right: none;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    }
+    .searchTerm:focus{
+    color: #380136;
+    }
 
 .icon-search{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.searchButton {
+    margin-right: 0px;
+    border: 1px solid var(--brand-active-color);
+    background: var(--brand-active-color);
+    text-align: center;
+    color: #eeeeee;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
 
 .search-form button {
-    margin-left: 5px;
     cursor: pointer;
 }
 
 .search-form button:hover{
-    background-color: var(--third-color);
+    background-color: rgb(20, 10, 110);
 }

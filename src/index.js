@@ -122,6 +122,7 @@ function slowMotion() {
         querySelector(".gallery")
         .firstElementChild
         .getBoundingClientRect();    
+    
     window.scrollBy({
         top: cardHeight * 1.8,
         behavior: 'smooth',
